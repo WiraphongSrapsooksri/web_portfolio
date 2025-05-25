@@ -1,17 +1,20 @@
 import {
-    AutoAwesome,
-    DataObject,
-    ModelTraining,
-    Psychology,
+  AutoAwesome,
+  Business,
+  Code,
+  DataObject,
+  ModelTraining,
+  PanToolSharp,
+  Psychology,
 } from '@mui/icons-material';
 import {
-    Box,
-    Chip,
-    Container,
-    Grid,
-    Paper,
-    Stack,
-    Typography,
+  Box,
+  Chip,
+  Container,
+  Grid,
+  Paper,
+  Stack,
+  Typography,
 } from '@mui/material';
 import React from 'react';
 
@@ -33,28 +36,33 @@ const About: React.FC = () => {
     {
       icon: <Psychology />,
       title: 'Data Analysis',
-      description: 'Passionate about analyzing data in business and general contexts to uncover meaningful insights',
+      description: 'Passionate about analyzing data\nin business and general contexts\nto uncover meaningful insights',
     },
     {
       icon: <DataObject />,
       title: 'Machine Learning',
-      description: 'Solid understanding of ML and DL theories with practical application experience',
+      description: 'Solid understanding of ML and DL\ntheories with practical\napplication experience',
     },
     {
       icon: <ModelTraining />,
       title: 'AI Technologies',
-      description: 'Enthusiastic about emerging technologies like LLMs and cutting-edge AI research',
+      description: 'Enthusiastic about emerging\ntechnologies like LLMs and\ncutting-edge AI research\nCurrently exploring RAG, MCP,\nReinforcement Learning for\nnext-generation solutions',
     },
     {
-      icon: <AutoAwesome />,
-      title: 'Innovation',
-      description: 'Currently exploring RAG, MCP, and Reinforcement Learning for next-generation solutions',
+      icon: <Code />,
+      title: 'Programming',
+      description: 'Experience with multiple\nprogramming languages\nand frameworks',
     },
+    // {
+    //   icon: <PanToolSharp />,
+    //   title: 'Tools',
+    //   description: 'Often studying and\nexperimenting with\nnew tools',
+    // }
   ];
 
   return (
     <Container maxWidth="lg">
-      <Stack spacing={6}>
+      <Stack spacing={4}>
         {/* Section Header */}
         <Box textAlign="center">
           <Typography
@@ -68,17 +76,6 @@ const About: React.FC = () => {
             }}
           >
             About Me
-          </Typography>
-          <Typography
-            variant="h6"
-            sx={{
-              color: 'text.secondary',
-              maxWidth: '600px',
-              mx: 'auto',
-              lineHeight: 1.6,
-            }}
-          >
-            A passionate Data Scientist focused on turning data into actionable insights
           </Typography>
         </Box>
 
@@ -119,82 +116,18 @@ const About: React.FC = () => {
                   fontSize: '1.1rem',
                 }}
               >
-                I am a recent graduate with a strong passion for Data Science. I enjoy analyzing data—whether 
-                in business or general contexts—to uncover meaningful insights and make informed, impactful 
+                I am a recent graduate with a strong passion for Data Science. I enjoy analyzing data—whether
+                in business or general contexts—to uncover meaningful insights and make informed, impactful
                 decisions through effective actions.
                 <br /><br />
-                In addition to my interest in data analysis, I have a solid understanding of Machine Learning (ML) 
-                and Deep Learning (DL), both in theory and practical application. I am especially enthusiastic 
-                about emerging technologies such as Large Language Models (LLMs), and I am currently exploring 
-                areas like Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), and Reinforcement 
+                In addition to my interest in data analysis, I have a solid understanding of Machine Learning (ML)
+                and Deep Learning (DL), both in theory and practical application. I am especially enthusiastic
+                about emerging technologies such as Large Language Models (LLMs), and I am currently exploring
+                areas like Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), and Reinforcement
                 Learning (RL).
               </Typography>
             </Paper>
           </Grid>
-
-          {/* Contact Information */}
-          {/* <Grid item xs={12} md={6}>
-            <Paper
-              elevation={0}
-              sx={{
-                p: 4,
-                height: '100%',
-                border: '1px solid',
-                borderColor: 'grey.200',
-                borderRadius: 3,
-                '&:hover': {
-                  boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08)',
-                  transform: 'translateY(-2px)',
-                },
-                transition: 'all 0.3s ease',
-              }}
-            >
-              <Typography
-                variant="h5"
-                sx={{
-                  fontWeight: 600,
-                  mb: 3,
-                  color: 'primary.main',
-                }}
-              >
-                Contact Information
-              </Typography>
-              <Stack spacing={2}>
-                <Box>
-                  <Typography variant="subtitle2" sx={{ fontWeight: 600, color: 'text.secondary' }}>
-                    Full Name
-                  </Typography>
-                  <Typography variant="body1" sx={{ fontSize: '1.1rem' }}>
-                    Wiraphong Srapsooksri
-                  </Typography>
-                </Box>
-                <Box>
-                  <Typography variant="subtitle2" sx={{ fontWeight: 600, color: 'text.secondary' }}>
-                    Email
-                  </Typography>
-                  <Typography variant="body1" sx={{ fontSize: '1.1rem' }}>
-                    wiraphong.srap@gmail.com
-                  </Typography>
-                </Box>
-                <Box>
-                  <Typography variant="subtitle2" sx={{ fontWeight: 600, color: 'text.secondary' }}>
-                    Phone
-                  </Typography>
-                  <Typography variant="body1" sx={{ fontSize: '1.1rem' }}>
-                    083 838 0593
-                  </Typography>
-                </Box>
-                <Box>
-                  <Typography variant="subtitle2" sx={{ fontWeight: 600, color: 'text.secondary' }}>
-                    Desired Position
-                  </Typography>
-                  <Typography variant="body1" sx={{ fontSize: '1.1rem', fontWeight: 600, color: 'primary.main' }}>
-                    Data Scientist
-                  </Typography>
-                </Box>
-              </Stack>
-            </Paper>
-          </Grid> */}
         </Grid>
 
         {/* Key Highlights */}
@@ -203,39 +136,60 @@ const About: React.FC = () => {
             variant="h5"
             sx={{
               fontWeight: 600,
-              mb: 3,
+              mb: 4,
               textAlign: 'center',
               color: 'text.primary',
             }}
           >
             Key Highlights
           </Typography>
-          <Grid container spacing={3}>
+          <Grid container spacing={3} justifyContent="center">
             {highlights.map((highlight, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={4}
+                key={index}
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}
+              >
                 <Paper
                   elevation={0}
                   sx={{
-                    p: 3,
+                    p: { xs: 3, md: 3 },
                     textAlign: 'center',
                     height: '100%',
+                    width: '100%',
+                    maxWidth: { xs: '100%', sm: '350px', md: '100%' },
                     border: '1px solid',
                     borderColor: 'grey.200',
                     borderRadius: 3,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'flex-start',
+                    minHeight: { xs: 'auto', md: '200px' },
                     '&:hover': {
-                      boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08)',
-                      transform: 'translateY(-4px)',
+                      boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12)',
+                      transform: 'translateY(-3px)',
+                      borderColor: 'primary.light',
                     },
-                    transition: 'all 0.3s ease',
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                   }}
                 >
                   <Box
                     sx={{
                       color: 'primary.main',
-                      mb: 2,
+                      mb: { xs: 2, md: 1.5 },
                       '& svg': {
-                        fontSize: '2.5rem',
+                        fontSize: { xs: '2.5rem', md: '2.2rem' },
+                        transition: 'transform 0.3s ease',
                       },
+                      '&:hover svg': {
+                        transform: 'scale(1.05)',
+                      }
                     }}
                   >
                     {highlight.icon}
@@ -244,8 +198,9 @@ const About: React.FC = () => {
                     variant="h6"
                     sx={{
                       fontWeight: 600,
-                      mb: 1,
+                      mb: { xs: 1.5, md: 1 },
                       color: 'text.primary',
+                      fontSize: { xs: '1.2rem', md: '1.1rem' },
                     }}
                   >
                     {highlight.title}
@@ -255,6 +210,10 @@ const About: React.FC = () => {
                     sx={{
                       color: 'text.secondary',
                       lineHeight: 1.6,
+                      fontSize: { xs: '0.95rem', md: '0.875rem' },
+                      flexGrow: 1,
+                      whiteSpace: 'pre-wrap',
+                      wordBreak: 'break-word',
                     }}
                   >
                     {highlight.description}
@@ -265,58 +224,6 @@ const About: React.FC = () => {
           </Grid>
         </Box>
 
-        {/* Areas of Interest */}
-        <Box>
-          <Typography
-            variant="h5"
-            sx={{
-              fontWeight: 600,
-              mb: 3,
-              textAlign: 'center',
-              color: 'text.primary',
-            }}
-          >
-            Areas of Interest
-          </Typography>
-          <Paper
-            elevation={0}
-            sx={{
-              p: 4,
-              border: '1px solid',
-              borderColor: 'grey.200',
-              borderRadius: 3,
-            }}
-          >
-            <Stack
-              direction="row"
-              flexWrap="wrap"
-              gap={2}
-              justifyContent="center"
-            >
-              {interests.map((interest, index) => (
-                <Chip
-                  key={index}
-                  label={interest}
-                  variant="outlined"
-                  sx={{
-                    px: 2,
-                    py: 1,
-                    fontSize: '0.9rem',
-                    fontWeight: 500,
-                    borderColor: 'primary.main',
-                    color: 'primary.main',
-                    '&:hover': {
-                      bgcolor: 'primary.main',
-                      color: 'white',
-                      transform: 'translateY(-2px)',
-                    },
-                    transition: 'all 0.3s ease',
-                  }}
-                />
-              ))}
-            </Stack>
-          </Paper>
-        </Box>
       </Stack>
     </Container>
   );

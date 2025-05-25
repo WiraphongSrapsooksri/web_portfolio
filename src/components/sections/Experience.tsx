@@ -60,17 +60,6 @@ const Experience: React.FC = () => {
           >
             Experience
           </Typography>
-          <Typography
-            variant="h6"
-            sx={{
-              color: 'text.secondary',
-              maxWidth: '600px',
-              mx: 'auto',
-              lineHeight: 1.6,
-            }}
-          >
-            Professional experience and hands-on learning in software development
-          </Typography>
         </Box>
 
         {/* Experience Card */}
@@ -263,7 +252,7 @@ const Experience: React.FC = () => {
         </Paper>
 
         {/* Additional Note */}
-        <Paper
+        {/* <Paper
           elevation={0}
           sx={{
             p: 3,
@@ -285,7 +274,7 @@ const Experience: React.FC = () => {
             💡 This internship provided valuable hands-on experience in full-stack development, 
             DevOps practices, and AI integration, strengthening my foundation for a career in Data Science.
           </Typography>
-        </Paper>
+        </Paper> */}
       </Stack>
     </Container>
   );

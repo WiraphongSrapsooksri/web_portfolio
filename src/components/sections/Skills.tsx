@@ -12,11 +12,11 @@ import React from 'react';
 const skills = [
   {
     category: 'Programming Languages',
-    items: ['SQL', 'Python', 'C#', 'JavaScript']
+    items: ['Python', 'C#', 'JavaScript', 'TypeScript' , 'Java' , 'SQL (PostgreSQL , MySQL , SQL Server)']
   },
   {
     category: 'Data Science & AI',
-    items: ['Stats', 'EDA', 'ML (KNN, Naive Bayes, Decision Trees)', 'DL (Transformers, Object Detection, Image Classification)', 'NLP']
+    items: ['Stats','ML (KNN, Naive Bayes, Decision Trees)', 'DL (CNN , RNN, LSTM , Object Detection)', 'NLP']
   },
   {
     category: 'Frameworks & Libraries',
@@ -24,7 +24,7 @@ const skills = [
   },
   {
     category: 'Tools & Platforms',
-    items: ['Google Colab', 'Docker', 'Cloudflare', 'Nginx', 'Unix Command']
+    items: ['Google Colab','Kaggle', 'Docker', 'Cloudflare', 'Nginx', 'Unix Command']
   },
   {
     category: 'Concepts',

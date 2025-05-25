@@ -23,9 +23,6 @@ const Contact: React.FC = () => {
           <Typography variant="h3" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
             Contact
           </Typography>
-          <Typography variant="h6" sx={{ color: 'text.secondary' }}>
-            Feel free to reach out for collaborations or just a friendly hello 👋
-          </Typography>
         </Box>
 
         {/* Contact Info */}
@@ -55,13 +52,15 @@ const Contact: React.FC = () => {
               <Stack direction="row" spacing={1} justifyContent="center" alignItems="center">
                 <Phone fontSize="small" />
                 <Typography>083 838 0593</Typography>
+                <Typography>|</Typography>
+                <Typography>098 635 1046</Typography>
               </Stack>
             </Link>
             <Stack direction="row" spacing={2} justifyContent="center">
-              <IconButton href="#" aria-label="LinkedIn" sx={{ color: 'text.secondary' }}>
+              <IconButton href="https://www.linkedin.com/in/wiraphongsrapsooksri" aria-label="LinkedIn" sx={{ color: 'text.secondary' }}>
                 <LinkedIn />
               </IconButton>
-              <IconButton href="#" aria-label="GitHub" sx={{ color: 'text.secondary' }}>
+              <IconButton href="https://github.com/WiraphongSrapsooksri" aria-label="GitHub" sx={{ color: 'text.secondary' }}>
                 <GitHub />
               </IconButton>
             </Stack>

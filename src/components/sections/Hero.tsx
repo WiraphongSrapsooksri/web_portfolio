@@ -94,10 +94,11 @@ const Hero: React.FC = () => {
             >
               I am a recent graduate with a strong passion for Data Science. I enjoy analyzing data
               to uncover meaningful insights and make informed, impactful decisions through effective actions.
+              {/* ฉันเพิ่งสำเร็จการศึกษาและมีความหลงใหลในศาสตร์ข้อมูลอย่างมาก ฉันสนุกกับการวิเคราะห์ข้อมูลเพื่อค้นหาข้อมูลเชิงลึกที่มีความหมาย และตัดสินใจอย่างรอบรู้และทรงพลังผ่านการกระทำที่มีประสิทธิภาพ */}
             </Typography>
 
             {/* Contact Buttons */}
-            <Stack
+            {/* <Stack
               direction={{ xs: 'column', sm: 'row' }}
               spacing={2}
               sx={{ mt: 4 }}
@@ -151,7 +152,7 @@ const Hero: React.FC = () => {
               >
                 View My Work
               </Button>
-            </Stack>
+            </Stack> */}
 
             {/* Social Links */}
             <Stack direction="row" spacing={2} sx={{ mt: 3 }}>

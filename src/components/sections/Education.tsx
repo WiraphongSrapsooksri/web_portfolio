@@ -98,17 +98,6 @@ const Education: React.FC = () => {
 
         {/* Academic Background */}
         <Box>
-          <Typography
-            variant="h5"
-            sx={{
-              fontWeight: 600,
-              mb: 4,
-              textAlign: 'center',
-              color: 'text.primary'
-            }}
-          >
-            Academic Background
-          </Typography>
           <Grid container spacing={3} justifyContent="center">
             {education.map((edu, index) => (
               <Grid

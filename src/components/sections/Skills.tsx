@@ -16,19 +16,19 @@ const skills = [
   },
   {
     category: 'Data Science & AI',
-    items: ['Stats','ML (KNN, Naive Bayes, Decision Trees)', 'DL (CNN , RNN, LSTM , Object Detection)', 'NLP']
+    items: ['Statistics','Cleaning Data','Association','customer segmentation','Time series','Data Preprocessing','Model Comparison']
   },
   {
     category: 'Frameworks & Libraries',
-    items: ['FastAPI', 'React', 'Angular', 'Node.js', '.NET', 'TensorFlow']
+    items: ['FastAPI', 'React', 'Angular', 'Node.js','ASP.NET','Material UI','UV','TensorFlow','scikit-learn','streamlit']
   },
   {
     category: 'Tools & Platforms',
-    items: ['Google Colab','Kaggle', 'Docker', 'Cloudflare', 'Nginx', 'Unix Command']
+    items: ['Kaggle','Huggingface','Google Colab','Docker','Cloudflare', 'Nginx', 'Unix Command','firecrawl','UChat']
   },
   {
     category: 'Concepts',
-    items: ['Large Language Models', 'Retrieval-Augmented Generation (RAG)', 'Model Context Protocol (MCP)', 'Reinforcement Learning']
+    items: ['OOP','Data Science','Machine Learning','Deep Learning','NLP','Image Processing','LLM','RAG','MCP','Reinforcement Learning']
   }
 ];
 
@@ -39,9 +39,6 @@ const Skills: React.FC = () => {
         <Box textAlign="center">
           <Typography variant="h3" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
             Skills
-          </Typography>
-          <Typography variant="h6" sx={{ color: 'text.secondary', maxWidth: 600, mx: 'auto' }}>
-            A collection of tools, languages, and concepts I have mastered or am actively exploring
           </Typography>
         </Box>
 
